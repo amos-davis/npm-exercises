@@ -1,7 +1,15 @@
 const $ = require('jquery');
 
-$('body').css('background-color', 'red');
+$('#btn').click(function () {
+    $('body').css('background-color', 'yellow');
+});
 
-let sayHello = (name) => console.log('Hello');
+let sayHello = (name) => console.log('Hello, this is COOL!');
 
-sayHello();
+sayHello('amos');
+
+
+const helloMessage = require('./say-hello.js');
+// let createButton = require('./say-hello.js');
+console.log(helloMessage());
+// console.log(createButton());
